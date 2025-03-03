@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #004080;
+    color: #ffffff;
+    padding: 20px;
+    margin: 0px;
+    
+    
+    .header-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.nav-flex {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: #003366;
+    color: #ffffff;
+} 
+.nav-flex a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.nav-flex a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
+main{
+    background-color: #d4d4d4ad;
+    h2{
+        color: #004080;
+        padding : 20px;
+    }
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    ul{list-style-type: none;}
+    ul li:before {
+        content: '\2013';
+        position: absolute;
+        margin-left: -20px;
+      }
+}
+
+footer{
+    background-color: #004080;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+#login{
+    background-color: #d4d4d475;
+    form {
+        background-color: #d4d4d4;
+        text-align: center;
+        padding: 30px;
+        margin-left: 150px;
+        margin-right: 150px;
+        border-radius: 30px;
+        box-shadow: 0 0 10px 0 #3f3838;
+        input[type="text"],input[type="password"] {
+            background-color: #ffffe0;
+            padding: 10px;
+            border: 3px solid #cccccc46;
+            border-radius: 5px;
+            width: 50%;
+            margin: 0 auto;
+            display: block;
+        }
+        label {
+            display: block;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+    }
+    button {
+        background-color: #008002;
+        color: white;
+        border: 3px solid #cccccc46;
+        border-radius: 5px;
+        padding: 10px 10px;
+        margin: 30px 0;
+        border: none;
+        cursor: pointer;
+        width: 10%;
+    }
+    button:hover {
+        background-color: #006600;
+    }
+    a{
+        text-decoration: none;
+        color: #004080;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+
+    
+}
+
