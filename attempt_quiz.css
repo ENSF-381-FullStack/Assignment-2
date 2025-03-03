@@ -1,0 +1,179 @@
+/* =========================
+   1) Global Reset & Body
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* =========================
+     2) Header & Navigation
+========================= */
+header {
+    background-color: #004080;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 1.8em;
+    margin: 0;
+}
+
+header h2 {
+    color: #fff;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+nav {
+    background-color: #003366;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+     3) Footer
+========================= */
+footer {
+    background-color: #004080;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* =========================
+     4) Main Container
+========================= */
+main {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* =========================
+     Banner Image
+========================= */
+main img[alt="Quiz Banner"] {
+    display: block;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 auto 20px;
+}
+
+/* =========================
+     Light Blue Box for Course Details
+========================= */
+main h2, main h2 ~ p {
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+}
+
+main h2::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 140px); /* Reduced height by 10px */
+    background-color: #add8e6;
+    border-radius: 0;
+    z-index: -1;
+}
+
+/* =========================
+     Dark Blue Text for Course Title
+========================= */
+main h2:first-of-type {
+    color: #002060;
+}
+
+/* =========================
+     Grey Boxes for Inputs and Labels (No Border)
+========================= */
+input[type="radio"], input[type="checkbox"] {
+    display: inline-block;
+    position: relative;
+    margin: 10px 5px;
+}
+
+label {
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+input[type="radio"], input[type="checkbox"], label {
+    background-color: #cacaca;
+    padding: 10px;
+    border-radius: 0;
+    border: none;
+}
+
+/* =========================
+     Buttons
+========================= */
+main button {
+    background-color: #add8e6;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+main button:hover {
+    background-color: #7bbcd6;
+    color: #fff;
+}
+
+form button[type="submit"] {
+    background-color: #D32F2F;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+form button[type="submit"]:hover {
+    background-color: #821b1b;
+}
