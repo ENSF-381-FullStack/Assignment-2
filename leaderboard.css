@@ -1,0 +1,128 @@
+/* ==============================
+   Global Reset & Basic Styling
+============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  /* ==============================
+     Header & Nav
+  ============================== */
+  header {
+    background-color: #004080; /* Deep blue */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  header img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+  header h1 {
+    color: #fff;
+    font-size: 1.8em;
+    margin: 0;
+  }
+  
+  nav {
+    background-color: #003366; /* Darker blue */
+    padding: 10px;
+    text-align: center;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ==============================
+     Footer
+  ============================== */
+  footer {
+    background-color: #004080; 
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+  }
+  
+  /* ==============================
+     Main Content
+  ============================== */
+  main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    min-height: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* The existing HTML has a <table> with inline "border='1'" 
+     and style="...". We'll override some styling below.
+  */
+  main table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 20px; /* as in your inline style */
+  }
+  
+  /* The top row with "Leaderboard" text */
+  main table tr:first-child {
+    background-color: #4CAF50; /* Green */
+    color: #fff;
+    font-size: 36px;
+  }
+  
+  /* Each cell in the table */
+  main table th,
+  main table td {
+    border: 1px solid #ccc !important; /* override inline border */
+    padding: 10px;
+  }
+  
+  /* Ranks: gold, silver, bronze, etc. 
+     We'll override your inline style 
+     (e.g., style="background-color: #FFD700;") if needed 
+     or just let them remain.
+  */
+  main table tr[style*="#FFD700"] {
+    background-color: #FFD700 !important;
+  }
+  main table tr[style*="#C0C0C0"] {
+    background-color: #C0C0C0 !important;
+  }
+  main table tr[style*="#CD7F32"] {
+    background-color: #CD7F32 !important;
+  }
+  
+  /* Alternate row colors for ranks below 3 
+     (the HTML uses style="background-color: #f9f9f9" or #e4e2e2).
+     We'll just let inline remain or override them to match your screenshot exactly.
+  */
+  main table tr[style*="#f9f9f9"] {
+    background-color: #f9f9f9 !important;
+  }
+  main table tr[style*="#e4e2e2"] {
+    background-color: #e4e2e2 !important;
+  }
+  
+  /* Circular profile pictu
+  
